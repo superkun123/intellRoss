@@ -1,0 +1,2791 @@
+h2
+    font-family: 'Qanelas Regular'
+    font-size: 32px
+
+
+h3
+    font-family: 'Qanelas Regular'
+    font-size: 24px
+
+    
+.main-header 
+    min-height: 100vh
+    // background: url('/assets/img/video-preview.png')
+    background-size: cover
+    position: relative
+    padding-right: 200px
+    overflow: hidden
+
+.main-header__mask
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    background-color: #000000
+    opacity: 0.5
+
+.main-header__img-bg
+    @extend  .main-header__mask
+    opacity: 1
+    background-color: none
+    object-fit: cover
+
+
+
+
+
+@keyframes scale
+    0%
+        transform: scale(1.5)
+        
+    100%
+        transform: scale(1)
+
+
+@keyframes scale
+    0%
+        transform: scale(1.5)
+        
+    100%
+        transform: scale(1)
+
+
+@keyframes width
+    0%
+        width: 2px
+        
+    100%
+        width: 65px
+
+
+.width
+    animation-name: width
+    animation-duration: 1s  
+    animation-fill-mode: forwards
+
+.scale
+    animation-name: scale
+    animation-duration: 1s
+        
+
+.main-header__video-link svg 
+    margin-right: 20px
+
+.main-header__video-link:hover
+    text-decoration: none
+    & #circle-video
+        fill: #456CF4
+        stroke: #456CF4
+    
+
+    & .text-link
+            text-decoration: none
+            color: #456CF4
+            border-bottom: 1px solid #456CF4
+
+
+.main-nav
+    padding-left: 70px
+    padding-right: 70px
+    padding-top: 70px
+    font-family: 'Qanelas Regular'
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 99
+    display: flex
+    justify-content: flex-end
+
+.main-header__logo
+    display: flex
+    align-items: center
+
+.main-heade__logo-img
+    margin-right: 13px
+
+
+.main-header__separator
+    font-size: 14px
+    color: #ffffff
+    opacity: 0.5
+    display: flex
+    align-items: center
+    &::before
+        content: ' '
+        height: 31px
+        width: 1px
+        background-color: #ffffff
+        margin-left: 29px
+        margin-right: 29px
+
+.main-header__phone-menu-link
+    display: flex 
+    justify-content: flex-end
+    padding-right: 70px
+
+.main-header__request-link
+    margin-right: 15%
+   
+
+.text-link
+    color: #ffffff
+    border-bottom: 1px solid #fff
+    height: max-content
+    height: -moz-max-content
+    font-family: 'Qanelas Regular'
+
+    &:hover
+        text-decoration: none
+        color:#456CF4
+        border-bottom: 1px solid #456cf4 
+
+.hamburger-container
+    margin-left: 70px
+    padding-top: 5px
+    position: relative
+
+.hamburger
+    width: 65px
+    z-index: 99
+    & .line
+        background: #ffffff
+        width: 65px
+        height: 2px
+        margin-bottom: 6px
+        transition: 0.7s
+    & .hamburger-title
+        color: #ffffff
+        text-align: center
+        opacity: 0.5
+        font-size: 14px
+        position: absolute 
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+        text-align: center
+
+.main-header__title
+    color: #ffffff
+    font-size: 36px
+    margin-left: 285px
+    padding-top: 300px
+    max-width: 800px
+    font-family: 'Qanelas Regular'
+
+.line-thou-site
+    position: fixed
+    top: 0
+    height: 100%
+    background: #FFFFFF
+    opacity: 0.5
+    width: 1px
+    z-index: 10
+    right: 200px
+
+
+.secondcard
+    margin-top: 70px
+
+.thirdcard
+    margin-top: 140px
+
+.fourcard
+    margin-top: 210px
+
+.fivecard
+    margin-top: 280px
+
+.sixcard
+    margin-top: 350px
+
+
+.main-header__video-link
+    font-size: 24px
+    display: block
+    max-width: fit-content
+    max-width: -moz-max-content
+    margin-top: 70px
+    font-family: 'Qanelas Regular'
+
+// .main-header__video-link svg
+//     border: 1px solid #fff
+//     padding: 15px
+//     border-radius: 30px
+//     width: 50px
+//     height: 50px
+
+.main-header__link-down
+    background: url('/assets/img/bg-down.svg')
+    width: 90px
+    position: absolute
+    bottom: 0
+    left: 300px
+    text-align: center
+    background-repeat: no-repeat
+
+.about-company
+    background-color: #243B92
+    // padding-right: 200px
+    background-image: url(../assets/img/about-company-bg.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position-y: 100px
+    overflow: hidden
+
+    & .main-header__phone-menu-link
+        justify-content: flex-end
+
+.about-company__main-text
+    margin-top: 160px
+
+.about-company__main-text p 
+    font-family: 'Qanelas Regular'
+    font-size: 32px
+    color: #ffffff
+    margin-block-end: 100px
+
+.demonstration-img
+    display: flex
+
+
+.demonsration-text
+    color: #ffffff
+    font-family: 'Qanelas Regular'
+    padding-top: 50px
+    font-size: 18px
+    line-height: 162%
+    & ul 
+        list-style: none
+        margin: 0
+        padding: 0
+        margin-top: 40px
+        margin-bottom: 50px
+        opacity: 0.95
+
+    & .bottom-text
+        margin-bottom: 70px
+
+.main-btn
+    width: fit-content
+    width: -moz-max-content
+    background: #3A60E4
+    color: #fff
+    padding-top: 19px
+    padding-bottom: 19px
+    padding-left: 50px
+    padding-right: 50px
+    border-radius: 100px
+    display: block
+    transition: 0.2s
+    font-family: 'Qanelas Medium'
+    &:hover
+      transition: 0.2s
+      background: #456CF4
+      text-decoration: none
+      color: #fff
+    &:active 
+        background: #3054CF
+
+
+.white 
+    background: #fff
+    color: #1C2340
+
+.slide-card__text
+    font-family: 'Qanelas Regular'
+    color: #ffffff
+    font-size: 16px
+    margin-top: 20px
+    max-width: 460px
+
+.slide-card-container
+    display: flex
+
+
+.main-header__inner .main-header__phone-menu-link .text-link
+    color: #1F1F1F
+    border-bottom: 1px solid #1f1f1f
+    &:hover
+        text-decoration: none
+        color: #456CF4
+        border-bottom: 1px solid #456cf4
+
+.scrolldown
+    position: absolute
+    font-size: 16px
+    color: #fff
+    text-decoration: none
+    top: -44px
+    width: 122px
+
+.slide-card:first-child 
+    margin-left: 70px
+
+.slide-card-container
+    margin-top: 150px
+    width: 150%
+    overflow: hidden
+    margin-bottom: 100px
+
+
+.modal-open .main-nav
+     padding-right: 87px
+
+.modal-open .line-thou-site 
+    margin-right: 17px
+
+
+.modal-form__input
+    width: 100%
+    display: block
+    padding-left: 20px
+    padding-top: 12px
+    padding-bottom: 12px
+    background: #F7F7F7
+    font-size: 16px
+    color: #8F8F8F
+    margin-bottom: 10px
+    border: none
+    -webkit-border-radius: 6px
+    &:focus
+        outline: none
+        border: none
+    &:active
+        outline: none
+        border: none
+
+.form-modal 
+    margin: 0 auto
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 20px
+
+.submit-btn 
+    border: none
+    background: #3A60E4
+    color: #fff
+    border-radius: 30px
+    padding-top: 12px
+    padding-bottom: 12px
+    margin: 0 auto
+    text-align: center
+    min-width: 100%
+    margin-top: 8px
+    margin-bottom: 20px
+
+.close-btn-modal 
+    position: absolute
+    right: -27px
+    top: -30px
+    opacity: 1
+    &:hover
+        opacity: 1
+    &:focus
+        opacity: 1
+        outline: none
+
+.modal-body 
+    padding: 30px
+
+.modal__title
+    font-family: 'Qanelas Regular'
+    margin-bottom: 0
+
+.label-main-checkbox
+    display: inline
+
+
+
+input[type="checkbox"] 
+  visibility: hidden
+
+label 
+  cursor: pointer
+
+input[type="checkbox"] + label:before 
+  background: #fff
+  content: "\00a0"
+  display: inline-block
+  font: 16px/1em sans-serif
+  height: 16px
+  margin: 0 .25em 0 0
+  padding: 0
+  vertical-align: top
+  width: 16px
+  background: #fff
+  border-radius: 2px
+  border: 1px solid #3A60E4
+
+
+input[type="checkbox"]:checked + label:before 
+  background: #3A60E4
+  color: #fff
+  content: "\f00c"
+  text-align: center
+
+input[type="checkbox"]:checked + label:after 
+  font-weight: bold
+
+
+input[type="checkbox"]:focus + label::before 
+    outline: rgb(59, 153, 252) auto 5px
+
+
+.experiense 
+    background-image: url(../assets/img/bg-prom.jpg)
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    // padding-right: 200px
+
+
+.experiense .container
+    padding-top: 200px
+    padding-bottom: 200px
+
+
+.experiense .about-company__main-text 
+    margin-top: 0
+
+.experiense__mask
+   background: #3A60E4
+   opacity: 0.8
+   position: absolute
+   width: 100%
+   height: 100%
+
+
+.experiense  .about-company__main-text p
+    margin-bottom: 50px
+
+.experiense .experiense__small-text
+    font-size: 24px
+
+
+.main-form 
+    padding-top: 150px
+    background-color: #243B92
+
+.main-form__title 
+    color: #ffffff
+    font-size: 32px
+
+section
+    padding-right: 200px
+
+
+.main-form-section
+    background: #243B92
+    padding-top: 148px
+    padding-block-end: 148px
+
+
+.main-form 
+    background: #3a60e4
+    border-radius: 10px
+    padding: 64px 50px
+
+.main-form__input
+    display: block
+    width: 100%
+    background: none
+    border: none
+    color: #fff
+    border-bottom: 1px solid #fff
+    margin-bottom: 34px
+    padding-bottom: 13px
+    &:focus
+        outline: none
+
+.main-form__input::placeholder
+    padding-bottom: 13px
+    color: #fff
+    opacity: 0.5
+
+.main-form__textarea
+    border: 1px solid #ffffff
+    border-radius: 5px
+    padding: 14px 20px
+
+.main-form__title
+    font-size: 32px
+    font-family: 'Qanelas Regular'
+    margin-bottom: 70px
+
+.main-form__checkbox-label
+    color: #ffffff
+    opacity: 0.5
+    font-size: 14px
+
+.submit-btn
+    width: fit-content
+    min-width: -moz-max-content
+    width: -moz-max-content
+    max-width: fit-content
+    min-width: fit-content
+    max-width: -moz-max-content
+    padding: 19px 45px
+    background: #fff
+    color: #1C2340
+    margin-right: 40px
+    transition: 0.2s
+    &:focus
+        outline: none
+    &:hover
+      transition: 0.2s
+      background: #456CF4
+      text-decoration: none
+      color: #fff
+    &:active 
+        background: #3054CF
+        
+
+
+.contacts
+      background: #243B92
+      color: #fff
+
+.contacts__label
+    color: #ffffff
+    opacity: 0.9
+    font-size: 14px
+    font-family: 'Qanelas Regular'
+    margin-bottom: 0
+
+
+.contacts__contact 
+    font-family: 'Qanelas Medium'
+    display: block
+    font-size: 18px
+    color: #ffffff
+    text-decoration: none
+    margin-bottom: 35px
+    &:hover
+        color: #ffffff
+        text-decoration: none
+
+
+.contact__card img
+    margin-bottom: 11px
+
+.flex 
+    display: flex
+    flex-wrap: wrap
+    & .contacts__contact:first-child
+        margin-right: 10px
+
+
+.contacts__opacity-text p 
+    font-size: 14px
+    opacity: 0.5
+    margin-bottom: 30px
+
+.contact__map-n-cards
+    display: flex
+    flex-wrap: wrap
+
+.main-footer
+    background: #3A60E4
+    padding: 30px 70px
+    position: relative
+
+.main-footer a 
+    color: #fff
+    font-family: 'Qanelas Regular'
+    display: block
+
+.up
+    text-align: right
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    color: #fff
+
+.main-footer .text-link
+    width: fit-content
+    display: inline
+
+.low-opacity 
+    color: #fff
+    opacity: 0.5
+
+.main-footer
+    z-index: 98
+
+.main-footer__nav a 
+    margin-bottom: 10px
+
+.main-footer__nav .adress
+    color: #ffffff
+    margin-bottom: 10px
+
+
+.menu-open-body 
+    overflow: hidden
+
+
+.main-nav-menu 
+    background: #3A60E4
+    position: fixed
+    height: 100%
+    width: 100%
+    margin-bottom: 214px
+    top: 0
+    z-index: -1
+    transform: translateY(-1500px)
+    transition: 0.7s
+    padding-top: 140px
+    padding-bottom: 140px
+    overflow-y: scroll
+
+
+
+.main-nav-menu::-webkit-scrollbar 
+    width: 4px
+    margin-right: 44px
+  
+
+.main-nav-menu::-webkit-scrollbar-track 
+    background: #3A60E4
+    border-radius: 37px
+    border-radius: 100%
+  
+   
+.main-nav-menu::-webkit-scrollbar-thumb 
+    background: #3A60E4
+    border-radius: 37px
+    max-height: 78px
+
+
+
+.show-menu 
+    z-index: 98
+    opacity: 1
+    transition: 0.7s
+    transform: translateY(0px)
+
+.hide-menu-elem
+    opacity: 0
+    z-index: -1
+
+.menu-list
+    list-style: none
+    color: #ffffff
+    padding: 0
+    margin: 0
+    & .menu-list__main-link 
+        font-size: 36px
+        margin-bottom: 10px
+        & a
+          text-decoration: none
+          font-size: 36px
+          color: #fff
+          font-family: 'Qanelas Regular'
+    & .sub-menu
+        @extend .menu-list
+        margin-top: 10px
+        margin-bottom: 46px
+        & li 
+            line-height: 35px
+        & li a 
+            opacity: 0.8
+            font-size: 18px
+
+
+
+
+.hide-line
+    opacity: 0
+    position: absolute
+
+
+.close-line:first-child
+    transform: rotate(20deg) translate(3.5px, 5px)
+    -webkit-transform: rotate(20deg) translate(3.5px, 5px)
+    -moz-transform: rotate(20deg) translate(3.5px, 5px)
+    -ms-transform: rotate(20deg) translate(3.5px, 5px)
+    -o-transform: rotate(20deg) translate(3.5px, 5px)
+    transition: 1s
+    -webkit-transition: 1s
+    -moz-transition: 1s
+    -ms-transition: 1s
+    -o-transition: 1s
+
+.close-line:nth-child(2n) 
+    opacity: 0
+    transition: 1s
+    -webkit-transition: 1s
+    -moz-transition: 1s
+    -ms-transition: 1s
+    -o-transition: 1s
+
+.close-line:nth-child(3n)
+    transform: rotate(-20deg) translate(3.5px, -5px)
+    -webkit-transform: rotate(-20deg) translate(5px, -9px)
+    -moz-transform: rotate(-20deg) translate(5px, -9px)
+    -ms-transform: rotate(-20deg) translate(5px, -9px)
+    -o-transform: rotate(-20deg) translate(5px, -9px)
+    transition: 1s
+    -webkit-transition: 1s
+    -moz-transition: 1s
+    -ms-transition: 1s
+    -o-transition: 1s
+
+
+.contacts-in-menu-col
+    display: none
+
+
+.video-modal
+    position: relative
+    & video
+        margin-top: -20px
+        margin-bottom: -20px
+
+
+.video-play 
+    position: absolute
+    top: 35%
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    text-align: center
+
+.hide-video-btn
+    visibility: hidden
+
+
+
+.contacts__title
+    font-family: 'Qanelas Regular'
+    margin-bottom: 74px
+
+.logo-n-copyright
+    @extend .up
+    text-align: left
+
+.mobile-footer
+    display: none
+
+
+.main-nav-inner .main-header__logo svg path
+    fill: #1f1f1f
+
+
+.inner-page
+    min-height: 100vh
+
+.inner-page .main-header__phone-menu-link a 
+    color: #1f1f1f
+
+
+.main-nav-inner .hamburger .line
+    background: #3A60E4
+
+.main-nav-inner .hamburger-title
+    color: #1f1f1f
+
+.line-thou-site__inner
+    background: #CBCBCB
+
+.border-bottom-bread
+    border-bottom: 1px solid #8F8F8F
+    &:hover
+        border-bottom: 1px solid #456CF4
+
+.breadcrumps__ul
+    padding: 0
+    margin: 0
+    display: flex
+    list-style: none
+    & li a 
+        color: rgba(31,31,31,0.5)
+        // opacity: 0.5
+        &:hover
+            color: #456CF4
+            text-decoration: none
+            
+        &:active
+            color: #3054CF
+        &::after
+            content: " "
+            height: 1px
+            width: 9px
+            background: #000
+            display: inline-block
+            margin-left: 8px
+            margin-right: 8px
+            opacity: 0.5
+            margin-bottom: 4px
+        &::after:last-child
+            display: none
+
+.main-header__inner
+    min-height: 150px
+    background: none
+
+
+.form-modal .review-submit
+    width: 100%
+    margin-top: 10px
+
+.form-modal .review__checkbox-label
+    display: block
+    margin-top: 20px
+    margin-left: 0px
+
+
+.breadcrumps-container
+    padding-left: 85px
+    padding-right: 85px
+
+
+.about-integration
+    margin-top: 110px
+
+.inner-page p 
+    font-family: 'Qanelas Regular'
+    font-size: 18px
+    margin-bottom: 20px
+
+
+.about-integration__title
+    margin-bottom: 82px
+
+
+.integration__leftside-img 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 4px
+
+.integration-sertificat
+    margin-bottom: 70px
+
+
+.card-n-text
+    margin-bottom: 50px
+
+
+
+
+
+
+.inner-page ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+.inner-page li
+    font-family: 'Qanelas Regular'
+    font-size: 18px 
+ 
+    
+
+.tech__title
+    margin-bottom: 25px
+
+
+.about-integration-result
+    margin-bottom: 40px
+
+
+.integration-pic-desc__title
+    margin-bottom: 50px
+
+
+.integration__text 
+    margin-left: 40px
+
+
+.card-img-container
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 4px
+    padding-top: 90px
+    padding-bottom: 90px
+    display: flex
+    justify-content: center
+    margin-right: 50px
+    padding-left: 15px
+    padding-right: 15px 
+    max-height: 430px
+
+.card-img-container img 
+    max-width: 100%
+
+
+.card-img__text
+    display: flex
+    align-items: center
+
+
+.integration-pic-desc
+    margin-top: 70px
+    margin-bottom: 150px
+
+
+.work
+    margin-top: 110px
+    margin-bottom: 150px
+
+.work__title
+    margin-bottom: 70px
+
+.main-work__subtitle 
+    margin-bottom: 30px
+
+.main-work__text ul 
+    margin-bottom: 30px
+
+
+.start-section
+    margin-top: 110px
+    margin-bottom: 150px
+
+
+.startUp__title
+    margin-bottom: 70px
+
+
+.startUp ul li:first-child
+    margin-bottom: 25px
+
+
+.slick-dots li button:before
+    font-size: 20px
+    color: #3A60E4
+
+.slick-dots li.slick-active button:before
+    font-size: 25px
+    color: #3A60E4
+
+.slick-prev, .slick-next
+    background: #3A60E4
+    border-radius: 100px
+    padding: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 97
+    &:hover
+        background: #456CF4
+    &:active
+        background: #3054CF
+
+    &:focus
+        background: #456CF4
+
+.slick-prev
+    left: 30px
+    
+
+
+.slick-next
+    right: 30px
+
+
+.about-company-page__title
+    margin-bottom: 70px
+
+
+.about-company-page .slider
+    margin-bottom: 30px
+
+.about-company-page__btn
+    margin-top: 50px
+
+.about-company-page__slide
+    border-radius: 6px
+
+
+.title-with-btn
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.single-product
+    position: relative
+    display: flex
+    justify-content: center
+    width: 100%
+    max-height: 390px
+    transition: 0.3s
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    min-height: 390px
+    border-radius: 6px
+    &:hover .product-mask
+        opacity: 1
+        transition: 0.3s
+
+.product-mask
+    transition: 0.3s
+    position: absolute
+    z-index: 10
+    opacity: 0
+    width: 100%
+    height: 100%
+    border-radius: 6px
+    background: linear-gradient(0deg, rgba(58, 96, 228, 0.45), rgba(58, 96, 228, 0.45)), url(image.png)
+
+
+.product-text
+    margin-top: 20px
+
+
+.product-img
+    object-fit: contain
+
+
+.title-with-btn
+    margin-bottom: 70px
+
+.card-with-products
+    margin-top: 70px
+    margin-bottom: 100px
+
+.product-full-img
+    object-fit: cover
+    border-radius: 6px
+
+
+.oil__title
+    margin-bottom: 79px
+
+
+.numberlist
+    list-style: none
+    counter-reset: myCounter
+    padding-left: 0
+    margin-bottom: 100px
+
+.numberlist-sectond 
+    margin-bottom: 70px
+
+
+
+.numberlist li 
+    display: flex
+    align-items: center
+
+
+.number
+    min-width: 50px
+    width: 50px
+    height: 50px
+    margin-right: 20px
+    color: #ffffff
+    font-size: 18px
+    background: #3A60E4
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+
+.numbers-for-tablet
+    margin-bottom: 56px
+    display: flex
+    padding-left: 0
+    padding-right: 0
+    justify-content: space-between
+    & .col-md
+       max-width: 322px
+  
+
+.features__title
+    margin-bottom: 70px
+
+.features__title-list
+    margin-bottom: 50px
+
+.numbers-with-separate
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    & .col-md
+        max-width: 300px
+        
+.separatopr-ol
+    width: 59px
+    height: 1px
+    background: #BCBCBC
+
+
+
+.form-section 
+    border-bottom: 1px solid #243B92
+    padding-left: 0
+    padding-right: 0
+    margin-bottom: 30px
+
+.form-rounds
+    padding-left: 15px
+    padding-right: 15px
+
+.main-form-rounds__title
+    margin-bottom: 70px
+
+.form-section__title
+    margin-bottom: 30px
+
+.form-container
+    padding-top: 30px
+    border-radius: 10px
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    margin-left: 15px
+    margin-right: 15px
+
+.rounds__row-with-inputs
+    padding-bottom: 30px
+    & .modal-form__input
+        margin-bottom: 30px
+
+
+.rounds-total-row .col-md-8
+    padding-left: 30px
+
+
+.rounds-total-row .col-md-4
+    padding-right: 30px
+
+
+
+.single-document
+    display: flex
+    max-width: 400px
+    & svg
+        margin-right: 20px
+
+
+.reviews__title:first-child
+    margin-bottom: 70px
+
+
+.reviews__title-for-text
+    margin-bottom: 50px
+
+
+.big-text-before-review
+    margin-bottom: 100px
+
+
+.reviews-single
+    margin-bottom: 70px
+    padding-right: 50px
+
+
+.review-img 
+    margin-bottom: 30px
+
+
+.review__company-title
+    color: #000
+    font-family: 'Qanelas Medium'
+    margin-bottom: 5px
+    font-weight: bold
+
+
+.review__link
+    color: #3A60E4
+    text-decoration: underline
+    display: block
+    margin-bottom: 15px
+    margin-right: 24px
+
+
+.reviews-single p
+    margin-bottom: 15px
+    margin-top: 30px
+
+
+.review-input 
+    display: block
+    width: 100%
+    margin-bottom: 25px
+    background: none
+    border: none
+    outline: none
+    padding: 13px
+    border-bottom: 1px solid #ECECEC
+    &:hover
+        border-bottom: 1px solid #ECECEC
+    &:active
+        border-bottom: 1px solid #ECECEC
+
+
+.review-file
+    display: block
+
+.review-sumbit
+    display: block
+
+.inputfile 
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+.inputfile + label
+    cursor: pointer
+    display: flex
+    align-items: center
+
+.inputfile + label::before 
+    content: ' '
+    width: 50px
+    height: 50px
+    display: inline-block
+    background: url(../assets/img/file.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    margin-right: 10px
+
+.input-link
+    color: #3A60E4
+    border-bottom: 1px solid #3a60e4
+    &:hover
+        text-decoration: none
+
+.review-textarea
+    border: 1px solid #ECECEC
+    border-radius: 6px
+
+
+.review__checkbox-label
+    opacity: 0.5
+    color: #000
+    margin-left: 40px
+    & a 
+        opacity: 0.5
+        color: #000
+        border-bottom: 1px solid #000
+        &:hover
+            text-decoration: none
+            color: #000
+
+
+
+
+.review-submit
+    outline: none
+    border: none
+    margin-top: 50px
+    display: inline-block
+    margin-right: 10px
+
+.sertif__title
+    margin-bottom: 70px
+
+.sertif__text
+    margin-bottom: 70px
+
+
+.knr__title
+    padding-left: 15px
+    margin-bottom: 80px
+
+
+.knr__text
+    margin-top: 70px
+
+
+.inner-page .china__ul
+    margin-bottom: 30px
+
+
+.inner-page .china__ol
+    margin-left: 20px
+    padding: 0
+
+.public__title
+    margin-bottom: 70px
+
+.signle-public__img
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 4px
+
+.single-public__title
+    margin-top: 10px
+    color: #1F1F1F
+    font-size: 16px
+    text-decoration: none
+    &:hover
+        text-decoration: none
+
+.single-public__date, .single-public__counts
+    color: #929292
+    font-size: 16px
+    text-decoration: none
+    &:hover
+        text-decoration: none
+
+.single-public
+    margin-bottom: 50px
+    &:hover
+        cursor: pointer
+        text-decoration: none
+
+
+.public-row .col-lg-4, .public-row .col-md-6
+    margin-bottom: 50px
+
+
+.public-inner__titles 
+    padding-left: 30px
+    margin-bottom: 80px
+
+.public-inner__title
+    font-size: 32px
+
+
+.public-inner__btn
+    margin-top: 70px
+    padding-left: 20px
+
+
+.partners__title
+    @extend .sertif__title
+
+
+.rounds-page .slick-slide
+    border: 1px solid #E5E5E5
+    border-radius: 10px
+
+
+.contacts
+    padding-bottom: 150px
+
+
+.breadcrumps__ul li:last-child a:after
+    display: none
+
+
+.main-header__inner .main-header__separator
+    color: #1F1F1F
+
+.main-header__inner .main-header__separator::before
+    background: #1F1F1F
+
+.up__author .text-link
+    opacity: 0.5
+    &:hover
+        color: #fff
+        opacity: 1
+
+
+.requirements
+       padding-left: 0
+       padding-top: 5px
+       color: #999
+       max-height: 0
+       text-align: left
+       -webkit-transition: 0.28s
+       transition: 0.28s
+       overflow: hidden
+       color: #FF8B8B
+       font-family: "Qanelas Regular"
+       font-size: 12px
+       margin-top: -34px
+       margin-bottom: 34px
+
+
+
+
+.rounds-table
+    width: 100%
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    padding-left: 20px
+    padding-right: 20px
+    border-radius: 10px
+
+
+.table-desc
+    max-width: 515px
+
+
+.rounds-table th
+    padding-left: 20px
+    padding-top: 20px
+    padding-right: 20px
+    padding-bottom: 45px
+    border-right: 1px solid #EAEAEA
+   
+
+td
+    border-right: 1px solid #EAEAEA
+    // height: 150px
+    text-align: left
+    // padding-left: 20px
+    // padding-right: 20px
+    z-index: 0
+
+
+.small-td
+    height: auto
+    
+
+.table-desc
+    text-align: left
+    padding-left: 20px
+
+
+tr 
+    border-bottom: 1px solid #3A60E4
+    z-index: 1
+
+
+.td-row
+    border-bottom: 1px solid #eaeaea
+    padding: 10px 19px
+    &:last-child
+        border-bottom: 0
+
+
+.mark-td
+    padding: 10px 19px
+
+
+.table-title
+   margin-top: 130px
+   margin-bottom: 50px
+
+
+.rounds-table__header .header-tr
+    border-bottom: 1px solid #eaeaea
+
+tr:last-child
+    border-bottom: 0
+
+
+.video-title-inner
+    margin-top: 100px
+    margin-bottom: 70px
+
+
+.rounds-page .video-modal video
+    margin-top: 0
+    margin-bottom: 100px
+    border-radius: 10px
+
+
+.separatopr-ol
+    height: 1px
+    width: 59px
+    margin-left: 15px
+    margin-right: 15px
+
+
+.numbers-with-separate
+    align-items: center
+
+.numbers-with-separate .col-md
+    max-width: fit-content
+
+.round-form-label
+    width: 100%
+    font-size: 14px
+    color: rgba(0,0,0,0.5)
+    font-family: 'Qanelas Regular'
+
+.rounds__row-with-inputs  .input-with-label
+    margin-bottom: 15px
+    width: 100%
+
+
+.main-content
+    height: 100%
+
+
+
+.round-cal-btn
+    background: #FAFAFA
+    border-radius: 10px 10px 0px 0px
+    padding: 20px 30px
+    font-size: 16px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.round-cal-btn p 
+    margin-bottom: 0
+
+
+.round-cal-btn:first-child
+    background: #3A60E4
+    color: #fff
+
+.round-cal-btn:last-child
+    border-radius: 0px 0px 10px 10px
+
+
+.crain-img-header
+    // padding-left: 0
+    margin-right: 40px
+
+
+.crain-text-header
+    display: flex
+    justify-content: center
+    flex-direction: column
+    & h3
+        font-size: 24px
+        margin-bottom: 20px
+
+.card-with-text
+    background: #FFFFFF
+    display: block
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    // margin-bottom: 20px
+    &:hover .card-with-text__text
+        color: #456CF4
+        text-decoration: none
+    & img
+        object-fit: contain
+
+
+.card-with-text-row .col-md-4
+    margin-bottom: 20px
+
+
+.card-with-text__header
+    max-height: 270px
+    min-height: 270px
+
+.card-with-text__footer
+    padding: 20px 40px
+    & p
+        margin-bottom: 0
+        font-size: 18px
+        text-decoration: none
+        color: #1f1f1f
+        &:hover
+          color: #456CF4
+          text-decoration: none
+            
+
+
+.card-with-text__header
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+
+a:hover
+    text-decoration: none
+    color: #456CF4
+
+
+.production__title
+    max-width: 70%
+    line-height: 170%
+
+.doublepic-row
+    margin-top: 50px
+    margin-bottom: -30px
+
+.mobile-table
+    display: none
+
+
+.gkp__list ul 
+    list-style-type: disc
+    padding-left: 20px
+    & li
+        margin-bottom: 10px
+
+
+.mobile-table-in-steam
+    display: table
+
+
+.mobile-crains-tr
+    border-bottom: 1px solid #EAEAEA
+
+.mobile-title-two
+    border-bottom: 1px solid #EAEAEA !important
+    font-size: 12px
+    color: #1f1f1f
+    opacity: 0.5
+
+.mobile-title-td
+    border-right: 0
+    width: 50%
+    padding-left: 16px
+    padding-top: 16px
+    padding-bottom: 16px
+
+.img-with-table-steam 
+    padding-left: 0
+    padding-right: 0
+    margin-top: 100px
+
+.img-with-table-steam__title
+    margin-bottom: 50px
+
+
+.img-with-table-steam__content
+    justify-content: space-between
+
+
+.steam-bottom-text
+    max-width: 70%
+    flex: 0.7
+    margin-top: 70px
+
+
+
+.inner__img-n-text-row
+    justify-content: space-between
+
+.vtulka__card
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    text-align: center
+    padding: 40px
+    margin-top: 100px
+
+.vtulka__card .vtulka__main-desc
+    max-width: 750px
+    margin: 0 auto
+    margin-bottom: 40px
+
+.vtulka__card p 
+    margin-top: 40px
+    margin-bottom: 70px
+
+.rounds-td
+    padding-left: 20px
+    padding-top: 20px
+    padding-bottom: 40px
+
+.rounds-header
+    padding-left: 20px
+    padding-top: 20px
+    padding-bottom: 40px
+    border-bottom: 1px solid #eaeaea
+    
+
+th 
+    font-size: 16px
+    color: #1f1f1f
+    opacity: 0.5
+    font-weight: 400
+    font-family: 'Qanelas Regular'
+
+
+td 
+    font-family: 'Qanelas Regular'
+    font-size: 18px
+
+
+.rounds-table-mob
+    display: none
+
+
+.sticky-block-container 
+    position: relative
+    
+.row-with-big-labels
+    padding-bottom: 0px
+
+.rounds-slider
+    height: 800px
+
+
+.rounds-checkbox
+    margin-left: 0
+    text-align: left
+
+
+    
+.rounds-sumbit
+    margin-top: 35px
+
+.rounds-total-row
+    align-items: center
+    border-bottom: 0
+    margin-bottom: 30px
+
+
+.sticky-image-row
+    padding-left: 15px
+    padding-right: 15px
+    margin-bottom: 50px
+
+
+.last-round-label .round-form-label
+    margin-bottom: 0px
+
+
+.last-round-label .input-with-label
+    margin-bottom: 0
+
+
+.form-section:last-child
+    border-bottom: none
+
+
+.spin__subtitle 
+    font-size: 18px
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    
+    -webkit-appearance: none
+    margin: 0
+
+
+input[type=number] 
+    -moz-appearance: textfield
+
+
+.rounds-page .spin-video  video
+    margin-bottom: 50px
+
+
+.spin-subtitle__row
+    margin-bottom: 100px
+
+
+.spin-submit
+    padding-left: 15px
+
+
+.spin-submit .main-btn
+    width: 100%
+
+
+.double-input 
+    display: flex
+    justify-content: space-between
+    & .input-with-label
+        max-width: 48%
+        flex: 0.48
+
+
+.inner-contact
+    background: #fff
+    color: #1F1F1F
+    margin-top: 110px
+    & .contact__title
+        color: #1f1f1f
+    & .contacts_text
+        color: #1f1f1f
+    & .contacts__label
+        color: #1f1f1f
+    & .contacts__contact
+        color: #1f1f1f
+
+
+
+.slick-slide:focus
+    outline: none
+
+
+.firstcalc
+    margin-top: 110px
+
+.firstcalc__title
+    margin-bottom: 70px
+    padding-left: 15px
+    padding-right: 15px
+
+
+label 
+    display: inline-block
+    margin-bottom: 30px
+
+
+.form-calc-btn
+    display: block
+    text-align: center
+    color: #1f1f1f
+    background:  #F5F5F5
+    border-radius: 8px
+    padding:19px 50px
+    margin-right: 27px
+    margin-bottom: 0px
+    max-height: 60px
+
+.calc-btn-container
+    display: flex
+    align-items: center
+
+
+.calc-row
+    padding-bottom: 0
+
+
+.label-for-wheels2
+    margin-bottom: 0
+
+
+.col-result-btn 
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    margin-top: 30px
+    margin-bottom: 50px
+
+
+.calc-form
+    transition: max-height 0.5s ease-out
+    // max-height: 340px
+    overflow: hidden
+    
+
+.calc-form-show
+    transition: max-height 0.5s ease-out
+    max-height: 3000px
+
+.oil-container
+    margin-left: 20px
+    display: flex
+    justify-content: flex-end
+
+
+.oil-block
+    margin-right: 8px
+
+
+.oil__title
+    text-align: center
+
+.oil-block__inner
+    background: #F5F5F5
+    border-radius: 10px
+    text-align: center
+    width: 257px
+    
+.with-oil
+    background: #3A60E4
+    margin-left: 8px
+    color: #fff
+
+
+.with-oil .oil-block__block
+    border-bottom: 1px solid #2F53D1
+
+
+.oil-block__block
+    padding-top: 20px
+    padding-bottom: 15px
+    border-bottom: 1px solid #E2E2E2
+
+
+.oil-block__block:last-child
+    border-bottom: none
+
+.firstcalc .calc__features-ul
+    padding-top: 30px
+
+.calc__features-ul li 
+    margin-bottom: 30px
+    font-size: 16px
+
+.oil-sect
+    margin-bottom: 50px
+
+.oil-sect__title
+    text-align: center
+    margin-bottom: 50px
+    font-size: 18pxs
+    font-family: 'Qanelas Regular'
+
+
+.lifix
+    padding-top
+
+.firstcalc .calc-firstul
+    padding-top: 70px
+
+
+.no
+    padding-top: 24px
+    padding-bottom: 24px
+
+// responsive
+
+
+
+@media ( max-width: 1440px  )
+
+    .main-footer  .main-btn-mobile
+        display: none
+
+    .desctop-footer
+        display: none
+
+    .mobile-footer
+        display: block
+
+    .main-footer .container-fluid
+        padding: 0
+
+
+    .main-footer .main-header__separator::before
+        margin-left: 15px
+        margin-right: 15px
+
+    .main-footer .main-btn
+        padding: 10px
+        color: #000
+
+    .main-footer .tel
+        margin-right: 15px
+
+    .main-footer
+        padding: 25px
+
+
+    .firstrow, .secondrow, .thirdrow
+        display: flex
+        align-items: center
+
+    .up
+        flex-direction: row
+        align-items: center
+
+    
+    .up__author 
+        margin-bottom: 0
+
+    .up-link
+        margin-left: 40%
+
+    .secondrow
+        justify-content: space-between
+        margin-bottom: 30px
+
+    .firstrow
+        padding-bottom: 20px
+        margin-bottom: 10px
+        border-bottom: 1px solid #fff
+        justify-content: space-between
+
+
+    .copyright .up__author
+        display: none
+
+
+    .main-footer .main-header__logo
+        margin-right: 63px
+
+
+
+    section
+        padding-right: 0px
+
+    .line-thou-site
+        right: 170px
+        display: none
+
+    .main-header 
+        padding-right: 0px
+
+    .main-header__phone-menu-link
+        padding-right: 15px
+
+
+img 
+    max-width: 100%
+    
+
+
+@media (min-width: 1024px)
+    #exampleModalCenterVideo .modal-dialog
+      max-width: 800px
+
+        
+
+
+@media (min-width: 1200px)
+    .container-for-main-nav-menu 
+        max-width: 1340px
+
+
+
+
+
+@media screen and ( max-width:1024px  )
+
+    .breadcrumps-container 
+       margin-top: 100px
+       padding-left: 40px
+       padding-right: 40px
+
+
+    .start-section
+        margin-top: 70px
+        margin-bottom: 70px
+
+    .about-company 
+        background-position-x: -700px
+
+    .demonstration-img
+        display: block
+
+    .about-company__main-text p
+        font-size: 20px
+        margin-bottom: 50px
+
+    .modal-open .main-nav
+     padding-right: 25px
+
+    .container-for-main-nav-menu
+        display: flex
+
+    .menu-list
+        flex: 50%
+        max-width: 50%
+
+    .contacts-in-menu-col
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-end
+        & .contacts__contact
+            margin-bottom: 30px
+            border-bottom: 1px solid #fff
+            opacity: 1
+
+
+    .menu-list .menu-list__main-link a
+        font-size: 20px
+
+    .menu-list 
+        display: block
+
+    
+    .main-nav-menu 
+        padding-top: 70px
+
+    .menu-list .sub-menu
+        display: none
+
+    .menu-list .menu-list__main-link
+        margin-bottom: 30px
+
+    .menu-list .col-5, .menu-list .col-7
+        max-width: 100%
+        flex: 1
+        padding: 0
+
+    section
+        padding-right: 0px
+
+    .main-header
+        padding-right: 0
+        min-height: auto
+
+    .main-header__title
+         padding-top: 137px
+         padding-bottom: 100px
+
+    .main-header__title
+        margin-left: 25px
+        padding-left: 0
+        font-size: 24px
+    
+    .main-nav 
+        padding-left: 25px
+        padding-right: 25px
+        padding-top: 30px
+
+    .main-header__phone-menu-link
+        display: none !important
+
+    .main-header__logo-col
+        display: block !important
+        opacity: 1 !important
+
+    .line-thou-site
+        display: none
+
+    .main-header__link-down
+        display: none
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+
+    .sticky-image-row
+        flex-direction: column-reverse
+
+    .sticky-block
+        margin-bottom: 30px
+
+    .numbers-with-separate li
+        margin-bottom: 15px !important
+        margin-top: 15px
+
+    .separatopr-ol 
+        margin-left: 39px !important
+
+    .rounds-slider
+        height: auto
+
+    .video-play
+        top: 25%
+
+    .numbers-with-separate
+      display: block
+
+    .separatopr-ol
+      height: 59px
+      width: 1px
+      margin-left: 20px
+      margin-right: 20px
+    
+
+    .numbers-for-tablet
+      display: block
+
+    .numberlist li
+      margin-bottom: 50px
+
+    .partner__logo
+      margin-bottom: 50px
+
+    
+    .public-inner__title
+      margin-bottom: 20px
+
+
+
+    .public-inner__titles
+      margin-bottom: 50px
+
+
+    .knr__text
+      margin-top: 0px
+
+    .features__title-list
+        margin-bottom: 30px
+
+
+    .numbers-with-separate
+        display: block
+
+    .numbers-for-tablet
+        & .col-md
+            margin-bottom: 50px
+
+
+    .knr__title
+        margin-bottom: 30px
+
+    
+
+    .numbers-for-tablet
+        display: block
+
+    .oil__title
+        margin-bottom: 30px
+
+    .title-with-btn
+        margin-bottom: 50px
+
+    .card-with-products
+        margin-top: 20px
+
+    .about-company-page__title
+        margin-bottom: 30px
+
+    .about-company-page__btn
+        margin-top: 30px
+
+    .start-section
+        margin-top: 70px
+        margin-bottom: 70px
+
+    .inner-page li
+        font-size: 16px
+
+
+    .work__title
+        margin-bottom: 50px
+
+    .work
+        margin-top: 70px
+        margin-bottom: 70px
+
+    h3
+        font-size: 18px
+
+
+    .breadcrumps__ul li a 
+        font-size: 12px
+
+
+
+    .breadcrumps-container
+        margin-top: 100px
+        padding-left: 40px
+        padding-right: 40px
+
+    .about-integration__title, .integration-pic-desc__title
+        margin-bottom: 30px
+
+
+    .integration-pic-desc
+        margin-top: 50px
+        margin-bottom: 70px
+
+    .inner-page h2 
+        font-size: 20px
+
+    .inner-page p 
+        font-size: 16px
+
+    .card-img-container 
+        margin-right: 0px
+
+    .card-img__text
+        margin-top: 30px
+
+    .integration__text
+        font-size: 16px
+
+    .main-header__title 
+        max-width: 539px
+
+    .experiense .container
+        padding-top: 60px
+        padding-bottom: 60px
+
+    .main-video
+        height: 317px
+
+    .main-header__video-link .text-link
+        font-size: 18px
+
+    .main-form-section
+        padding-top: 100px
+        padding-bottom: 100px
+
+    .main-form__title
+        font-size: 20px
+        margin-bottom: 40px
+
+    .main-form
+        padding: 40px
+
+
+
+    .public-inner__title
+       margin-bottom: 20px
+       font-size: 20px
+
+
+    .public-inner__titles
+       margin-bottom: 50px
+
+
+
+        
+    .experiense .about-company__main-text p 
+        font-size: 20px
+
+    .main-page .experiense .experiense__small-text
+        font-size: 16px
+
+    .single-product
+        max-height: 335px
+
+
+
+    .card-with-text img
+        max-width: 70%
+
+
+    .card-with-text__header 
+        max-height: 170px
+        min-height: 170px
+
+    .card-with-text__footer
+        padding: 15px 20px
+
+    .mobile-crains-tr
+        border-bottom: 1px solid #EAEAEA
+
+    .mobile-title-two
+        border-bottom: 1px solid #EAEAEA !important
+        font-size: 12px
+        color: #1f1f1f
+        opacity: 0.5
+
+    .crain-img-header
+        flex: 1
+        max-width: 100%
+        margin-right: 0
+        padding-left: 15px
+        margin-bottom: 50px
+
+    .rounds-page .spin-video video
+        margin-bottom: 0
+        
+
+@media screen and ( max-width:480px)
+
+    .rounds-total-row .rounds-checkbox
+        margin-top: 15px
+
+    .rounds-slider
+        height: auto
+
+    .rounds-total-row
+        margin-bottom: 0px
+
+
+    .rounds-col-submit
+        display: flex
+        flex-direction: column-reverse
+
+
+    .rounds-table-mob
+        display: block
+        padding: 16px
+        background: #FFFFFF
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        font-family: "Qanelas Regular"
+        font-size: 14px
+
+
+    .rounds-table-mob__card
+        padding-bottom: 20px
+        margin-bottom: 20px
+        border-bottom: 1px solid #3A60E4
+        &:last-child
+            border-bottom: none
+            padding-bottom: 0
+
+
+    .numbers-with-separate  li
+        margin-bottom: 15px
+        margin-top: 15px
+
+    .separatopr-ol
+        margin-left: 39px
+
+    .size__title
+        margin-bottom: 5px
+        font-size: 12px
+        opacity: 0.5
+
+
+    .rounds-table-mob__title
+        margin-bottom: 20px
+
+    .rounds-table-mob__text
+        margin-bottom: 20px
+
+    .rounds-table-mob__char
+        display: flex
+
+    .rounds-table-mob__size
+        margin-right: 30px
+
+
+    .vtulka__card
+        padding: 5px
+        margin: 15px
+        padding-top: 30px
+        padding-bottom: 0px
+
+    .img-with-table-steam__content .col-md-6
+        margin-bottom: 20px
+
+    .crain-img-header
+        margin-bottom: 30px
+
+    .production__title
+        max-width: 100%
+
+    .doublepic-row
+        margin-bottom: 0px
+
+    .video-title-inner
+        margin-top: 70px
+        font-size: 20px
+
+    .table-title
+        margin-top: 50px
+
+    .card-with-text-row .col-md-4:last-child
+        margin-bottom: 0
+
+    .mobile-title-td
+        border-right: 0
+        width: 50%
+        padding-left: 16px
+        padding-top: 16px
+        padding-bottom: 16px
+
+    .rounds-table
+        display: none
+
+    
+    .mobile-table
+        display: table
+
+
+  
+
+
+
+    .single-product
+        max-height: 212px
+        min-height: 212px
+        
+
+    .slide-card-container
+        width: 600%
+
+    .slide-card 
+        min-width: 288px
+
+    .up-link svg 
+        margin-right: 6px
+
+    .public-inner__title
+       margin-bottom: 20px
+       font-size: 20px
+
+
+    .public-inner__titles
+       margin-bottom: 30px
+
+
+    .knr__img-n-text
+        flex-direction: column-reverse
+
+    .sertif-row .col-md-4
+        margin-bottom: 40px
+
+    
+    .numbers-for-tablet
+        margin-bottom: 0px
+
+    .numberlist
+        margin-bottom: 70px
+
+    .title-with-btn
+        margin-bottom: 30px
+
+    .title-with-btn h2
+        margin-bottom: 30px
+
+
+    .card-with-products
+        margin-top: 40px
+        margin-bottom: 70px
+
+    .title-with-btn
+        flex-wrap: wrap
+
+    .slick-prev, .slick-next
+        width: 30px
+        padding: 15px
+
+    .start-section
+        margin-top: 40px
+        margin-bottom: 70px
+
+    .work
+        margin-top: 40px
+        margin-bottom: 70px
+
+    .breadcrumps__ul
+        flex-wrap: wrap
+
+    .breadcrumps__ul li a::after
+        margin-bottom: 0
+
+
+    .breadcrumps__ul li a
+        display: flex
+        align-items: center
+
+    .about-integration
+        margin-top: 40px
+
+    .breadcrumps-container
+        padding-left: 15px
+        padding-right: 15px
+
+    .card-img-container
+        margin-right: 0px
+        margin-bottom: 30px
+        padding-top: 45px
+        padding-bottom: 45px
+
+    .inner-page h2 
+        font-size: 20px
+        margin-bottom: 30px
+
+    .inner-page p 
+        font-size: 16px
+
+    .about-integration__title
+        margin-bottom: 16px
+        font-size: 20px
+
+    .integration__leftside-img
+        margin-bottom: 30px
+
+    .integration__text
+        margin-left: auto
+
+    .main-form-section
+        padding-top: 70px
+        padding-bottom: 70px
+
+    .main-form
+        padding: 20px
+
+    .main-form .submit-btn
+        width: 100%
+        max-width: 100%
+        margin-right: 0
+
+    .experiense .container 
+      padding-top: 40px
+      padding-bottom: 40px
+
+
+    .main-btn
+        width: 100%
+        text-align: center
+
+    .about-company__main-text p
+        margin-bottom: 0
+
+    .demonsration-text
+        padding-top: 0
+        & p 
+            font-size: 16px
+
+    .demonstration-img
+        text-align: center
+
+    .close-btn-modal
+        top: 30px
+        right: 30px
+        z-index: 97
+
+    .close-btn-modal svg
+        stroke: #3A60E4
+        & rect 
+            fill: #3a60e4
+
+
+
+    .form-modal 
+        margin-top: 0
+
+    .modal__title
+        font-size: 20px
+        margin-bottom: 30px
+
+    .form-modal .modal-content 
+        height: 100%
+        border-radius: 0
+        border: 1px solid #fff
+
+
+    .form-modal .modal-dialog
+        height: 100%
+        margin: 0
+        border-radius: 0
+
+
+    .main-header
+        background-position: center
+
+
+    .main-header__title
+        font-size: 24px
+
+    .main-header__video-link svg
+       margin-right: 15px
+
+    .modal-open .main-nav
+       padding-right: 15px
+
+    .main-video
+        height: 235px
+
+    .video-play
+        top: 20%
+
+    .main-footer
+        padding: 15px
+
+    .main-nav-menu
+        padding-top: 45px
+        padding-bottom: 45px
+        overflow: scroll
+
+    .contacts-in-menu-col
+        padding: 0
+        width: 100%
+        flex: 1
+        align-items: flex-start
+        & a 
+            max-width: fit-content
+            max-width: -moz-fit-content
+
+    .menu-list, .menu-list .sub-menu 
+        flex: 1
+        max-width: 100%
+        border-bottom: 1px solid #ffffff
+        padding-bottom: 25px
+        margin-bottom: 30px
+
+    .container-for-main-nav-menu
+        display: block
+
+    .menu-list .menu-list__main-link
+        margin-bottom: 0px
+
+    .main-nav 
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 15px
+
+    .main-header__separator 
+        display: none
+
+    .main-heade__logo-img
+        max-width: 30px
+
+    .main-header__logo
+        & svg
+            max-width: 77px
+
+    .main-footer .main-btn-mobile
+        display: block
+
+    .hamburger .line
+        max-width: 42px
+        width: 42px
+
+    .hamburger-title
+        font-size: 8px
+
+    .main-header__title
+        margin-left: 0
+        padding-left: 0
+        padding-right: 0
+
+    .main-header__logo-col
+        padding-left: 0
+
+    .firstrow 
+        border-bottom: 0px
+        & .tel
+            display: none
+        & .main-btn
+            display: none
+    .secondrow
+        display: block
+        & a 
+          padding-top: 10px
+          padding-bottom: 10px
+          border-top: 1px solid rgba(255, 255, 255, 0.2)
+
+    .up__author
+        display: none
+
+    .copyright .up__author
+        display: block
+
+    .main-footer .up-link
+        display: flex
+        margin-left: 0
+        font-size: 14px
+
+    .up
+        display: flex
+        justify-content: flex-end
+
+    .thirdrow
+        margin-top: 30px
+
+    .main-footer .main-header__logo
+        margin-right: 0
+
+    .main-footer .main-header__separator
+        display: flex
+
+    .copyright
+        font-size: 14px
+
+    .secondrow
+        margin-bottom: 20px
+
+    .review__checkbox-label
+        text-align: center
+        margin-left: 0
+        margin-top: 10px
+        display: block
+
+    .hamburger-container
+        // max-width: 32px
+        // margin-left: 0px
+        // padding-top: 0px
+    
+@media screen and ( max-width:360px)
+    .main-video 
+        height: 230px
+
+    .main-heade__logo-img
+        margin-right: 8px
+
+
+@media screen and ( max-width:320px)
+    .main-video
+        height: 220px
+
+
+@font-face 
+  font-family: 'Qanelas Light'
+  src: url('../assets/fonts/Qanelas-Light.ttf') 
+  font-weight: 300
+  font-style: normal
+
+
+
+@font-face 
+  font-family: 'Qanelas Regular'
+  src: url('../assets/fonts/Qanelas-Regular.ttf') 
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'Qanelas Medium'
+  src: url('../assets/fonts/Qanelas-Medium.ttf') 
+  font-weight: bold
+  font-style: normal
+
+    
+
+    
